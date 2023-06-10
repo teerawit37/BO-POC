@@ -24,7 +24,7 @@ interface Sprint {
   bottomtwo: string;
 }
 
-export default function Home() {
+export default function Sprint() {
   const [sprints, setSprints] = useState<Sprint[]>([])
   const [open, setOpen] = useState(false)
   const [value, onChange] = useState<Value>(new Date());

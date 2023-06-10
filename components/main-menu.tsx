@@ -14,9 +14,11 @@ import TransactionMenuIcon from "./svgs/transaction-menu-icon";
 
 const menus = [
   { icon: DashboardMenuIcon, title: "Dashboard", href: "/" },
-  { icon: CarMenuIcon, title: "Query", href: "/query" },
-  { icon: BookingMenuIcon, title: "Utility", href: "/utility" },
-  { icon: BellMenuIcon, title: "Notifications", href: "/notifications" },
+  { icon: CarMenuIcon, title: "Rule No-Dis", href: "/rule-no-discount" },
+  { icon: CarMenuIcon, title: "Rule Dis", href: "/rule-discount" },
+  { icon: BookingMenuIcon, title: "Sprint", href: "/sprint" },
+  { icon: BellMenuIcon, title: "Order", href: "/order" },
+  { icon: BellMenuIcon, title: "User", href: "/user" },
   { icon: SettingMenuIcon, title: "Settings", href: "/settings" },
 ] as Menu[];
 
@@ -44,7 +46,7 @@ function MainMenu() {
       <div className="flex flex-col space-y-5">
         {/* Logo */}
         <div>
-          <Link href="/" className="block px-2 py-6">
+          <Link href="/" className="block px-2 py-4">
             ORCHID
           </Link>
         </div>
@@ -61,7 +63,8 @@ function MainMenu() {
             ))}
           </ul>
 
-          <hr className="ml-4 py-2 text-white/20" />
+          {/* <hr className="ml-4 py-2 text-white/20" /> */}
+          <hr className="ml-4 text-white/20" />
 
           <div>
             <p className="px-4 py-3 text-white/50">Report</p>
